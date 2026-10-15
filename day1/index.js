@@ -1,36 +1,19 @@
-// const name="saba";
-// const doing="student";
-// const love="swimming";
+const add = (a, b) => a + b;
+const sub = (a, b) => a - b;
+const mult = (a, b) => a * b;
+const div = (a, b) => a / b;
 
-// function abtMe(name, doing, love){
-//     console.log("i am " + name);
-//     console.log("i am " + doing);
-//     console.log("i love " + love);
-    
-// }
+const numbers = [1, 2, 3, 4, 5];
 
-// abtMe(name, doing, love);
+const change = numbers.map((num) => num * 2);
 
+function mapper(array, callback) {
+  const diffNum = [];
 
-// function NumSum(a,b){
-//     const multiply = a*b;
-//     const minus = multiply-10;
-//     return minus;
-// }
-
-// console.log(NumSum(5,5));
- 
- function formatPrice(price, currency){
-    if (currency==="GEL") {
-    return price + " " + "₾";
-    }
-    else if (currency==="USD") {
-        return price + " " + "$";
-    }
-    else{
-        return price + " " + "€";
-    }
- }
-
-console.log(formatPrice(23,"USD"));
- 
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    const changed = callback(change);
+    diffNum.push(changed);
+  }
+  return diffNum;
+}
