@@ -12,7 +12,7 @@ function mapper(array, callback) {
 
   for (let i = 0; i < array.length; i++) {
     const element = array[i];
-    const changed = callback(change);
+    const changed = callback(element);
     diffNum.push(changed);
   }
   return diffNum;
