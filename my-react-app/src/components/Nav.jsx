@@ -1,18 +1,22 @@
 function Nav() {
   return (
-    <nav>
-      <h5>
-        <a href="#">Home</a>
-      </h5>
-      <h5>
-        <a href="#">About</a>
-      </h5>
-      <h5>
-        <a href="#">Supply</a>
-      </h5>
-      <h5>
-        <a href="#">🔍</a>
-      </h5>
+    <nav className="navbar">
+      <div className="logo">☕ Sunny Side</div>
+
+      <ul className="nav-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
     </nav>
   );
 }

@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      <p>&copy; {new Date().getFullYear()} ur website name</p>
+    <footer className="footer">
+      <p>© 2026 Sunny Side Cafe. Made with ❤️</p>
     </footer>
   );
 }
