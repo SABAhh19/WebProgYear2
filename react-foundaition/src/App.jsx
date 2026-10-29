@@ -1,7 +1,7 @@
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 function getRandomInt() {
-  const num = Math.floor(Math.random() * 3);
+  const num = Math.floor(Math.random() * 3); //aq rom chavwerot reactDescriptions.length ar jobia?
 
   return reactDescriptions[num];
 }
