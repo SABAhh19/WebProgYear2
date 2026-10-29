@@ -1,9 +1,7 @@
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 function getRandomInt() {
-  const num = Math.floor(Math.random() * 3); //aq rom chavwerot reactDescriptions.length ar jobia?
-
-  return reactDescriptions[num];
+  return Math.floor(Math.random() * 3);
 }
 
 function Header() {
@@ -12,8 +10,8 @@ function Header() {
       <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
-        {getRandomInt()} React concepts you will need for almost any app you are
-        going to build!
+        {reactDescriptions[getRandomInt()]} React concepts you will need for
+        almost any app you are going to build!
       </p>
     </header>
   );
