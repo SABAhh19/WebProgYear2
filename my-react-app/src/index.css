@@ -1,4 +1,4 @@
-* {
+/* * {
   background-color: hsl(0, 0%, 40%);
 }
 
@@ -18,4 +18,22 @@
   height: auto;
   border-radius: 50px;
   margin-bottom: 10px;
+} */
+
+.welcome-msg {
+  font-size: 2.5em;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.login-prompt {
+  font-size: 2.5em;
+  background-color: rgb(128, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px;
 }
