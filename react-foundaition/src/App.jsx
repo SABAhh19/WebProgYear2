@@ -1,6 +1,7 @@
 import Header from "./Header";
-import CoreConcept from "./coreConcept";
+import CoreConcept from "./CoreConcept";
 import { CORE_CONCEPTS } from "./data";
+import TabButton from "./TabButton";
 
 function App() {
   return (
@@ -32,6 +33,15 @@ function App() {
             />
           </ul>
         </div>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton title="Love" />
+            <TabButton title="Sad" />
+            <TabButton title="Happy" />
+            <TabButton title="Health" />
+          </menu>
+        </section>
       </main>
     </>
   );
