@@ -5,27 +5,26 @@ import stateImg from "./assets/state-mgmt.png";
 
 export const CORE_CONCEPTS = [
   {
-    image: componentsImg,
-    title: "Components",
+    img: componentsImg,
+    title: "Work-out",
     description:
-      "The core UI building block - compose the user interface by combining multiple components.",
+      "The core to living healthy is working-out because it makes ur body more alive",
   },
   {
-    image: jsxImg,
-    title: "JSX",
+    img: jsxImg,
+    title: "Eating",
     description:
-      "Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.",
+      "Eating is very important to healthy living without it it has no point",
   },
   {
-    image: propsImg,
-    title: "Props",
-    description:
-      "Make components configurable (and therefore reusable) by passing input data to them.",
+    img: propsImg,
+    title: "Sleep",
+    description: "after a long day if u do'n recover it will affect ur gains",
   },
   {
-    image: stateImg,
-    title: "State",
+    img: stateImg,
+    title: "Discipline",
     description:
-      "React-managed data which, when changed, causes the component to re-render & the UI to update.",
+      "discipline is main step to everything if u do'n have discipline theres no point in doing all that",
   },
 ];

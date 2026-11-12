@@ -1,7 +1,7 @@
-function CoreConcept({ image, title, description }) {
+function CoreConcept({ img, title, description }) {
   return (
     <li>
-      <img src={image} alt={title} />
+      <img src={img} alt={title} />
 
       <h3>{title}</h3>
 
