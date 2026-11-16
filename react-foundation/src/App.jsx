@@ -3,11 +3,15 @@ import CoreConcept from "./CoreConcept";
 import { CORE_CONCEPTS } from "./data";
 import TabButton from "./TabButton";
 
+import { useState } from "react";
+
 function App() {
-  let selectedTopic = "Please Choose A Topic";
+  // let selectedTopic = "Please Choose A Topic";
+
+  const [selectedTopic, setSelectedTopic] = useState("Please select topic");
 
   function handleClick(value) {
-    selectedTopic = value;
+    setSelectedTopic(value);
     console.log(selectedTopic);
   }
 
