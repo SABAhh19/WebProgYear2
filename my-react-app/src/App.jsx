@@ -5,12 +5,17 @@ import Cards from "./components/Cards";
 import Menu from "./components/Menu";
 import UserGreetings from "./UserGreetings";
 
-function App() {
-  return (
-    <>
-      <UserGreetings isLoggedIn={true} username="SABAhh" />
-    </>
-  );
-}
+const [price, setPrice] = useState(100);
+
+const handleApplyDiscount = () => {
+  setPrice(80);
+};
+
+return (
+  <div>
+    <p>{price}</p>
+    <button onSelect={handleApplyDiscount}>Apply Discount</button>
+  </div>
+);
 
 export default App;

@@ -1,22 +1,20 @@
-import reactCoreConceptsImg from "./assets/react-core-concepts.png";
+import reactCoreConceptsImg from "../assets/react-core-concepts.png";
 
 const titles = ["Fundamentals", "Crucial", "Core"];
 
 function getRandomInt() {
-  return Math.floor(Math.random() * 3);
+  return Math.floor(Math.random() * titles.length);
 }
 
-function Header() {
+export default function Header() {
   return (
     <header>
-      <img src={reactCoreConceptsImg} alt="Stylized atoms" />
+      <img src={reactCoreConceptsImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
         {titles[getRandomInt()]} React concepts you will need for almost any app
-        you are going to build
+        you are going to build!
       </p>
     </header>
   );
 }
-
-export default Header;
